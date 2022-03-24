@@ -1,0 +1,29 @@
+<h1>Lista de videojuegos:</h1>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Identidicador</th>
+        <th>Título</th>
+        <th>Imagen</th>
+        <th>Ver detalle</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let h of listaVideojuegos">
+        <td>{{ h.id }}</td>
+        <td>{{ h.titulo }}</td>
+        <td><img src ="{{h.imagen}}"></td>
+      </tr>
+      <tr *ngIf="listaVideojuegos.length==0">
+        <td style="color: red;" colspan="4">
+          No hay ningún videojuego aún :( 
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <button routerLink="/login">Volver</button>
+

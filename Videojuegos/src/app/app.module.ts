@@ -9,6 +9,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { PieDePaginaComponent } from './componentes/pie-de-pagina/pie-de-pagina.component';
 import { ListaVideojuegosComponent } from './componentes/lista-videojuegos/lista-videojuegos.component';
 import { MenuComponent } from './componentes/menu/menu.component';
+import { DetalleVideojuegoComponent } from './componentes/detalle-videojuego/detalle-videojuego.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { MenuComponent } from './componentes/menu/menu.component';
     CabeceraComponent,
     PieDePaginaComponent,
     ListaVideojuegosComponent,
-    MenuComponent
+    MenuComponent,
+    DetalleVideojuegoComponent
   ],
   imports: [
     BrowserModule,

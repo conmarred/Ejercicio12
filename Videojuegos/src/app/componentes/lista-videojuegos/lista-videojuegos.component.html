@@ -1,5 +1,6 @@
 <h1>Lista de videojuegos:</h1>
 
+<p>Pulsa en el videojuego para ver el detalle</p>
 
   <table>
     <thead>
@@ -7,15 +8,14 @@
         <th>Identidicador</th>
         <th>Título</th>
         <th>Imagen</th>
-        <th>Ver detalle</th>
       </tr>
     </thead>
     <tbody>
 
-      <tr *ngFor="let h of listaVideojuegos">
-        <td>{{ h.id }}</td>
-        <td>{{ h.titulo }}</td>
-        <td><img src ="{{h.imagen}}"></td>
+      <tr *ngFor="let v of listaVideojuegos" (click)="irDetalle(v)">
+        <td>{{ v.id }}</td>
+        <td>{{ v.titulo }}</td>
+        <td><img src ="{{v.imagen}}"></td>
       </tr>
       <tr *ngIf="listaVideojuegos.length==0">
         <td style="color: red;" colspan="4">
@@ -26,4 +26,6 @@
   </table>
   
   <button routerLink="/login">Volver</button>
+
+
 

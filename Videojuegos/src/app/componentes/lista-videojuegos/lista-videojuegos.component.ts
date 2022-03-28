@@ -22,7 +22,7 @@ export class ListaVideojuegosComponent implements OnInit {
 
 
   constructor(private router:Router) {
-    let videojuego : Videojuego = new Videojuego(1,"Mario Kart","Nintengo" ,"/assets/images/super-mario.png", 5)
+    let videojuego : Videojuego = new Videojuego(1,"Mario Kart","Nintendo" ,"/assets/images/super-mario.png", 5)
     let videojuego2 : Videojuego = new Videojuego(2,"Fifa21","Xbox" ,"/assets/images/nintendo-switch.png", 4)
     let videojuego3 : Videojuego = new Videojuego(3,"Zelda","Nintendo" ,"/assets/images/zelda.png", 3)
     this.listaVideojuegos.push(videojuego);

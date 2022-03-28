@@ -1,6 +1,24 @@
 <h1>Detalle del videojuego {{titulo}}</h1>
-<p>Id: {{id}}</p>
-<p>Título: {{titulo}}</p>
-<p>Compañía: {{company}}</p>
-<p>Valoración media: {{valoracion}}</p>
-<img src="{{imagen}}">
+
+<table>
+    <thead>
+      <tr>
+        <th>Identidicador</th>
+        <th>Título</th>
+        <th>Compañía</th>
+        <th>Valoración media</th>
+        <th>Imagen</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <tr >
+          <td>{{id}}</td>
+          <td>{{titulo}}</td>
+          <td>{{company}}</td>
+          <td>{{valoracion}}</td>
+          <td><img src ="{{imagen}}"></td>
+        </tr>
+        
+      </tbody>
+    </table>

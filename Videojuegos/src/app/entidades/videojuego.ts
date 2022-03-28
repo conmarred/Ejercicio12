@@ -47,13 +47,5 @@ export class Videojuego{
         this.id = value;
     }
 
-   
-
-    
-
-   /* public toString() : string {
-        return `Id: ${this.id}, Titulo: ${this.titulo}, Compania: ${this.company}, Imagen: ${this.imagen}, Valoracion media: ${this.valoracion}`
-    }*/
-
 
 }
